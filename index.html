@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Momondo-5</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+
+<body>
+  <!-- Header Section Start -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-blue2 ">
+      <div class="container text-white">
+        <a class="navbar-brand" href="index.html"><img src="./assets/img/logo23.png"
+            style="width:90px;height:30px; margin-bottom:6px;"></a>
+        <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <!-- <span class="navbar-toggler-icon "></span> -->
+          <i class="fa-solid fa-bars text-white"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white ">
+            <li class="nav-item">
+              <a class="nav-link active text-danger2 fw-bold" aria-current="page" href="#">Flight</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-light" href="javascript:void()">Hotel</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-light" href="javascript:void()">Car Hire</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-light" href="javascript:void()">Trip Finder</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-light" href="javascript:void()">Inspirations</a>
+            </li>
+
+          </ul>
+          <form class="d-flex" role="search">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="javascript:void()" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  English(GBP)
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="javascript:void()">English</a>
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="javascript:void()">Hindi</a>
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="javascript:void()">Marathi</a>
+                  </li>
+
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-success2" href="javascript:void()">Login</a>
+              </li>
+
+            </ul>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Header Section End -->
+
+  <!--Our Banner section start -->
+  <div class="banner position-relative ">
+    <div class="container ">
+      <div class="row">
+        <div class="col-sm-9 col-lg-7  ms-1 text-light position-absolute top-20">
+          <h1>
+            "The best place to find <br>the cheapest airfares"
+          </h1>
+
+          <p class="fw-bold fs-2 mt-4">
+            - every single time
+          </p>
+        </div>
+      </div>
+      <div class="row ">
+        <div class=" col-11 col-md-10 col-sm-9 position-absolute bottom-0 ms-2 mb-1 bg-info2 rounded py-2 px-2 px-sm-3">
+          <nav class="mb-2">
+            <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+              <button class="nav-link active rounded-0 border-0 text-white bg-info3  btn-width-85" id="nav-home-tab"
+                data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                aria-selected="true">
+
+                <i class="fa-solid fa-plane-departure"></i>Flights
+
+              </button>
+
+              <button class="nav-link rounded-0 border-0 text-white bg-info3 mx-1  btn-width-85" id="nav-profile-tab"
+                data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                aria-selected="false">
+
+                <i class="fa-solid fa-hotel"></i>Hotels
+
+              </button>
+
+              <button class="nav-link rounded-0 border-0 text-white bg-info3 btn-width-85" id="nav-contact-tab"
+                data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
+                aria-selected="false">
+
+                <i class="fa-solid fa-car"></i>Car
+
+              </button>
+
+            </div>
+          </nav>
+
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+              tabindex="0">
+              <form action="">
+                <div class="row g-1">
+                  <div class="col-sm-6 col-lg-2">
+                    <input type="text" class="form-control" placeholder="Enter origin city" aria-label="Origin">
+                  </div>
+                  <div class="col-sm-6 col-lg-2 d-flex"><i
+                      class=" mt-2 text-blue4 mx-1 fa-solid fa-arrow-right-arrow-left"></i>
+                    <input type="text" class="form-control" placeholder="Destination city" aria-label="Destination">
+                  </div>
+                  <div class="col-sm-6 col-lg-2">
+                    <input type="date" class="form-control" placeholder="Last name" aria-label="Sdate">
+                  </div>
+                  <div class="col-sm-6 col-lg-2">
+                    <input type="date" class="form-control" placeholder="Last name" aria-label="Edate">
+                  </div>
+                  <div class="col-sm-6 col-lg-2">
+                    <input type="text" class="form-control" placeholder="Passenger" aria-label="Passenger">
+                  </div>
+                  <div class="col-sm-6 col-lg-2 ">
+                    <input type="submit" class="form-control bg-dnager3 mb-2 rounded-sm-circle circle "
+                      placeholder="Search" aria-label="Passenger">
+                  </div>
+
+                </div>
+
+
+                <form action="">
+                  <div class="row formfunction col-sm-5 col-lg-9  ">
+                    <div class="col-sm-6 col-lg-10 d-flex">
+                      <h6 class="text-white mt-2 ">Trip type:</h6>
+                      <select class="form-select bg-info2 text-white border-0 " aria-label="Default select example">
+                        <option selected>Return trip</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+
+                      <!-- <div class="colsm-6 col-lg3 d-flex"> -->
+                      <h6 class="text-white mt-2 ">Trip type:</h6>
+                      <select class="form-select bg-info2 text-white border-0 " aria-label="Default select example">
+                        <option selected>Return trip</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+
+                      <!-- <div class="colsm-6 col-lg3 d-flex"> -->
+                      <div>
+                        <input type="checkbox" name="checkt" class="checkbox text-white mt-2 me-1" value="trip"><span
+                          class="text-white fs10 me-2 ">Direct flight only</span>
+                        <input type="checkbox" name="checkt" class="checkbox text-white mt-2 me-1" value="trip"><span
+                          class="text-white fs10 ">Include near airport</span>
+                        <!-- <h6 class="text-white mt-2 ">Direct flight only</h6> -->
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </form>
+            </div>
+            <!-- hotel start -->
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+
+              <form action="">
+                <div class="row g-1">
+                  <div class="col-sm-6 col-lg-2">
+                    <input type="text" class="form-control" placeholder="Enter origin city" aria-label="Origin">
+                  </div>
+                  <div class="col-sm-6 col-lg-2 d-flex"><i
+                      class=" mt-2 text-blue4 mx-1 fa-solid fa-arrow-right-arrow-left"></i>
+                    <input type="text" class="form-control" placeholder="Destination city" aria-label="Destination">
+                  </div>
+                  <div class="col-sm-6 col-lg-2">
+                    <input type="date" class="form-control" placeholder="Last name" aria-label="Sdate">
+                  </div>
+                  <div class="col-sm-6 col-lg-2">
+                    <input type="date" class="form-control" placeholder="Last name" aria-label="Edate">
+                  </div>
+                  <div class="col-sm-6 col-lg-2">
+                    <input type="text" class="form-control" placeholder="Passenger" aria-label="Passenger">
+                  </div>
+                  <div class="col-sm-6 col-lg-2 ">
+                    <input type="submit" class="form-control bg-dnager3 mb-2 rounded-sm-circle circle "
+                      placeholder="Search" aria-label="Passenger">
+                  </div>
+
+                </div>
+
+
+                <form action="">
+                  <div class="row formfunction col-sm-7 col-lg-9 ">
+                    <div class="col-sm-6 col-lg-10 d-flex">
+                      <h6 class="text-white mt-2 ">Trip type:</h6>
+                      <select class="form-select bg-info2 text-white border-0 " aria-label="Default select example">
+                        <option selected>Return trip</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+
+                      <!-- <div class="colsm-6 col-lg3 d-flex"> -->
+                      <h6 class="text-white mt-2 ">Trip type:</h6>
+                      <select class="form-select bg-info2 text-white border-0 " aria-label="Default select example">
+                        <option selected>Return trip</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+
+                      <!-- <div class="colsm-6 col-lg3 d-flex"> -->
+                      <div>
+                        <input type="checkbox" name="checkt" class="checkbox text-white mt-2 me-1" value="trip"><span
+                          class="text-white fs10 me-2 ">Direct flight only</span>
+                        <input type="checkbox" name="checkt" class="checkbox text-white mt-2 me-1" value="trip"><span
+                          class="text-white fs10 ">Include near airport</span>
+                        <!-- <h6 class="text-white mt-2 ">Direct flight only</h6> -->
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </form>
+
+
+
+            </div>
+            <!-- hotel end -->
+            <!-- car start -->
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+
+              <form action="">
+                <div class="row g-1">
+                  <div class="col-sm-6 col-lg-2">
+                    <input type="text" class="form-control" placeholder="Enter origin city" aria-label="Origin">
+                  </div>
+                  <div class="col-sm-6 col-lg-2 d-flex"><i
+                      class=" mt-2 text-blue4 mx-1 fa-solid fa-arrow-right-arrow-left"></i>
+                    <input type="text" class="form-control" placeholder="Destination city" aria-label="Destination">
+                  </div>
+                  <div class="col-sm-6 col-lg-2">
+                    <input type="date" class="form-control" placeholder="Last name" aria-label="Sdate">
+                  </div>
+                  <div class="col-sm-6 col-lg-2">
+                    <input type="date" class="form-control" placeholder="Last name" aria-label="Edate">
+                  </div>
+                  <div class="col-sm-6 col-lg-2">
+                    <input type="text" class="form-control" placeholder="Passenger" aria-label="Passenger">
+                  </div>
+                  <div class="col-sm-6 col-lg-2 ">
+                    <input type="submit" class="form-control bg-dnager3 mb-2 rounded-sm-circle circle "
+                      placeholder="Search" aria-label="Passenger">
+                  </div>
+
+                </div>
+
+
+                <form action="">
+                  <div class="row formfunction col-sm-7 col-lg-9  ">
+                    <div class="col-sm-6 col-lg-10 d-flex">
+                      <h6 class="text-white mt-2 ">Trip type:</h6>
+                      <select class="form-select bg-info2 text-white border-0 " aria-label="Default select example">
+                        <option selected>Return trip</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+
+                      <!-- <div class="colsm-6 col-lg3 d-flex"> -->
+                      <h6 class="text-white mt-2 ">Trip type:</h6>
+                      <select class="form-select bg-info2 text-white border-0 " aria-label="Default select example">
+                        <option selected>Return trip</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+
+                      <!-- <div class="colsm-6 col-lg3 d-flex"> -->
+                      <div>
+                        <input type="checkbox" name="checkt" class="checkbox text-white mt-2 me-1" value="trip"><span
+                          class="text-white fs10 me-2 ">Direct flight only</span>
+                        <input type="checkbox" name="checkt" class="checkbox text-white mt-2 me-1" value="trip"><span
+                          class="text-white fs10 ">Include near airport</span>
+                        <!-- <h6 class="text-white mt-2 ">Direct flight only</h6> -->
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </form>
+
+            </div>
+            <!-- car end -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- Our Banner section end -->
+
+  <!-- Our fun section start -->
+  <section class="fun py-4 text-white">
+    <div class="container">
+      <h4 class="text-center mb-4 fs-5 fw-bold">SOME FUN WE COVER</h4>
+      <div class="row">
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="bg-dark px-2 py-2 my-2 text-center">
+            <i class="fa-solid fa-person-biking"></i>
+            <h4 class="fs-6 fw-bold mb-0 mt-1 ">5670 M</h4>
+            <p class=" funp">CYCLING TRACK</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="bg-dark  px-2 py-2 my-2 text-center">
+            <i class="fa-solid fa-location-dot"></i>
+            <h4 class="fs-6 fw-bold mb-0 ">480 M</h4>
+            <p class=" funp">DISTANCE COVER</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="bg-dark px-2 py-2 my-2 text-center">
+            <i class="fa-solid fa-person-hiking"></i>
+            <h4 class="fs-6 fw-bold mb-0 ">5670 M</h4>
+            <p class=" funp">ALTITUDE HIKED</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="bg-dark  px-2 py-2 my-2 text-center">
+            <i class="fa-solid fa-sailboat"></i>
+            <h4 class="fs-6 fw-bold mb-0 ">480 M</h4>
+            <p class=" funp"> SELLING DISTANCE </p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="bg-dark  px-2 py-2 my-2 text-center">
+            <i class="fa-solid fa-cloud-sun-rain"></i>
+            <h4 class="fs-6 fw-bold mb-0 ">480 M</h4>
+            <p class=" funp">SPEND ADVENTURE</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="bg-dark  px-2 py-2 my-2 text-center">
+            <i class="fa-solid fa-tree"></i>
+            <h4 class="fs-6 fw-bold mb-0 ">480 M</h4>
+            <p class=" funp"> JUNGLE DISTANCE</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Our fun section end -->
+
+  <!-- Newslater section start -->
+  <div class="newslatter py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-9 text-center text-white ">
+          <h3 class="mt-4">SUBSCRIBE FOR OUR NEWSLATTER</h3>
+          <p class="mt-4 mx-sm-5 px-sm-5">Lorem ipsum dolor sit amet consectetur, adipisicing
+            elit. Ipsam expedita incidunt aut nesciunt! Quaerat
+            porro blanditiis dolorem,.</p>
+          <form action="">
+            <label for="email" id="email"></label>
+            <input type="email" class="w-50 opacity-75 px-2" placeholder="&#9993 Enter your email addres........">
+            <button class="w-30 border-0 px-4 py-1">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Newslater section end -->
+
+  <!-- Our Destination section start -->
+  <div class="detination py-5 bg-blue3">
+    <div class="conatiner">
+      <div class="row">
+        <h3 class="  text-center text-white">POPULAR DESTINATION </h3>
+      </div>
+      <div class="row px-4">
+
+        <div class="col-lg-3 col-sm-6 col-12 ">
+          <div class="card border-3 m-4 mx-sm-0">
+            <div class="card"> <img src="./assets/img/rom.jpg" class="card-img-top" alt="rom image">
+              <div class="card-body">
+                <p class="fw-bold my-2">
+                  <span class="text-danger2">$999</span>
+                  Roms.Florance & Venice <br>9-Night Vacating w/A
+                </p>
+                <p class="funp">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 col-12 ">
+          <div class="card border-3 m-4 mx-sm-0">
+            <div class="card"> <img src="./assets/img/rom.jpg" class="card-img-top" alt="rom image">
+              <div class="card-body">
+                <p class="fw-bold my-2">
+                  <span class="text-danger2">$999</span>
+                  Roms.Florance & Venice <br>9-Night Vacating w/A
+                </p>
+                <p class="funp">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 col-12">
+          <div class="card border-3 m-4 mx-sm-0">
+            <div class="card "> <img src="./assets/img/rom.jpg" class="card-img-top" alt="rom image">
+              <div class="card-body">
+                <p class="fw-bold my-2">
+                  <span class="text-danger2">$999</span>
+                  Roms.Florance & Venice <br>9-Night Vacating w/A
+                </p>
+                <p class="funp">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 col-12">
+          <div class="card border-3 m-4 mx-sm-0">
+            <div class="card"> <img src="./assets/img/rom.jpg" class="card-img-top" alt="rom image">
+              <div class="card-body">
+                <p class="fw-bold my-2">
+                  <span class="text-danger2">$999</span>
+                  Roms.Florance & Venice <br>9-Night Vacating w/A
+                </p>
+                <p class="funp">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row px-4">
+
+        <div class="col-lg-3 col-sm-6 col-12">
+          <div class="card border-3 m-4 mx-sm-0">
+            <div class="card"> <img src="./assets/img/rom.jpg" class="card-img-top" alt="rom image">
+              <div class="card-body">
+                <p class="fw-bold my-2">
+                  <span class="text-danger2">$999</span>
+                  Roms.Florance & Venice <br>9-Night Vacating w/A
+                </p>
+                <p class="funp">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 col-12">
+          <div class="card border-3 m-4 mx-sm-0">
+            <div class="card"> <img src="./assets/img/rom.jpg" class="card-img-top" alt="rom image">
+              <div class="card-body">
+                <p class="fw-bold my-2">
+                  <span class="text-danger2">$999</span>
+                  Roms.Florance & Venice <br>9-Night Vacating w/A
+                </p>
+                <p class="funp">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 col-12">
+          <div class="card border-3 m-4 mx-sm-0">
+            <div class="card"> <img src="./assets/img/rom.jpg" class="card-img-top" alt="rom image">
+              <div class="card-body">
+                <p class="fw-bold my-2">
+                  <span class="text-danger2">$999</span>
+                  Roms.Florance & Venice <br>9-Night Vacating w/A
+                </p>
+                <p class="funp">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 col-12">
+          <div class="card border-3 m-4 mx-sm-0">
+            <div class="card"> <img src="./assets/img/rom.jpg" class="card-img-top" alt="rom image">
+              <div class="card-body">
+                <p class="fw-bold my-2">
+                  <span class="text-danger2">$999</span>
+                  Roms.Florance & Venice <br>9-Night Vacating w/A
+                </p>
+                <p class="funp">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  <!-- Our Destination section end -->
+
+  <!-- Estimate section start -->
+  <div class="Estimate py-5 bg-info2 position-relative">
+    <div class="row position-absolute bottom-0">
+      <!-- <img src="./assets/img/estimate2.png" class="w-50 estmate"> -->
+    </div>
+    <div class="conatiner">
+      <div class="row px-5">
+        <h3 class=" fw-bold text-white">GET A QUICK ESTIMATE!</h3>
+        <p class="fw-bold text-white fs-6">GET A PROFFESIONAL HELP</p>
+        <hr size="8px" style=" width:100px;margin-left: 10px; color: #fff;" class="px-5">
+      </div>
+
+      <div class="row px-5">
+        <form action="">
+
+          <select class=" col-lg-2 col-sm-4 col-12 p-2 " aria-label="Default select example">
+            <option selected>Travel Purpose</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+
+
+          <input type="date" class="col-lg-2 col-sm-4 col-12 p-2" name="date" placeholder="Travel Date">
+
+
+          <select class=" col-lg-2 col-sm-4 col-12 p-2" aria-label="Default select example">
+            <option selected>Number of People</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+
+          <input type="email" class="col-lg-2 col-sm-4 col-12 p-2" name="date" placeholder="Email">
+          <!-- <input type="Submit" class="col-lg-2 col-sm-4 col-12 p-2" name="date" placeholder="Calculate"> -->
+          <button class=" col-lg-2 col-sm-4 col-12 border-0 p-2 bg-warning fw-bold">Calculate Now</button>
+
+          <!-- <div class="col-lg-2 col-sm-4 col-12"></div>
+        <div class="col-lg-2 col-sm-4 col-12"></div>
+        <div class="col-lg-2 col-sm-4 col-12"></div> -->
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Estimate section end -->
+
+  <!-- Blog section start -->
+  <section class="blog py-4">
+    <div class="container">
+      <div class="row">
+        <h4 class="text-center fw-bold">LATEST BLOG</h4>
+        <p class="text-center fw-bold col-md-8 offset-md-2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+          sit amet consectetur adipisicing elit. Amet, molestiae!
+          molestiae!sit amet consectetur
+        </p>
+      </div>
+      <div class="row mt-4">
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-sm-4">
+              <img src="./assets/img/blog01.jpg" alt="blog image" class="blogimage">
+            </div>
+            <div class="col-sm-8">
+              <p class="blogp fw-bold">Feb 05, 2016</p>
+              <h3 class="blogheading fw-bold">10 THINGS TODO BEFORE TRAVEL</h3>
+              <hr style="width:20px; size:8px; opacity: 10;">
+              <P class="blogp2 fw-bold">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur
+                Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Laudantium, quod!</P>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-sm-4">
+              <img src="./assets/img/blog01.jpg" alt="blog image2" class="blogimage">
+            </div>
+            <div class="col-sm-8">
+              <p class="blogp fw-bold">JUNE 23, 2016</p>
+              <h3 class="blogheading fw-bold">SAY NO TO LAZY LIFE</h3>
+              <hr style="width:20px; size:8px; opacity: 10;">
+              <P class="blogp2 fw-bold">Lorem ipsum dolor sit ametLorem ipsum dolor sit amet consectetur Lorem ipsum
+                dolor sit amet consectetur
+                consectetur adipisicing elit. Laudantium, quod!</P>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Blog section end -->
+
+  <!-- Our footer section start -->
+  <footer class="bg-dark2 bg-opacity-75 py-5">
+    <div class="container p-5">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <h3 class="fw-bold text-black2 mb-4">Top Contries</h3>
+          <p class="text-black2 fw-bold ">
+            <i class="fa-solid fa-globe"></i> Flight to
+            <a href="javascript:void()" class="text-decoration-none text-white">United States</a>
+          </p>
+
+          <p class="text-black2 fw-bold">
+            <i class="fa-solid fa-globe"></i> Flight to
+            <a href="javascript:void()" class="text-decoration-none text-white">United Kindom</a>
+          </p>
+
+          <p class="text-black2 fw-bold">
+            <i class="fa-solid fa-globe"></i> Flight to
+            <a href="javascript:void()" class="text-decoration-none text-white">Spain</a>
+          </p>
+
+          <p class="text-black2 fw-bold">
+            <i class="fa-solid fa-globe"></i> Flight to
+            <a href="javascript:void()" class="text-decoration-none text-white">Thailand</a>
+          </p>
+
+          <p class="text-black2 fw-bold">
+            <i class="fa-solid fa-globe"></i> Flight to
+            <a href="javascript:void()" class="text-decoration-none text-white">India</a>
+          </p>
+
+          <p class="text-black2 fw-bold">
+            <i class="fa-solid fa-globe"></i> Flight to
+            <a href="javascript:void()" class="text-decoration-none text-white">Germany</a>
+          </p>
+
+          <p class="text-black2 fw-bold">
+            <i class="fa-solid fa-globe"></i> Flight to
+            <a href="javascript:void()" class="text-decoration-none text-white">Denmark</a>
+          </p>
+
+          <p class="text-black2 fw-bold">
+            <i class="fa-solid fa-globe"></i> Flight to
+            <a href="javascript:void()" class="text-decoration-none text-white">France</a>
+          </p>
+
+          <p class="text-black2 fw-bold">
+            <i class="fa-solid fa-globe"></i> Flight to
+            <a href="javascript:void()" class="text-decoration-none text-white">Astralia</a>
+          </p>
+
+          <p class="text-black2 fw-bold">
+            <i class="fa-solid fa-globe"></i> Flight to
+            <a href="javascript:void()" class="text-decoration-none text-white">Unitead States</a>
+          </p>
+
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h3 class=" fw-bold text-black2 mb-4">Top Cities</h3>
+
+          <p class="text-black2 fw-bold ">
+            <i class="fa-solid fa-location-dot"></i> Flight to
+            <a href="javascript:void()" class="text-decoration-none text-white">London</a> , United kindom
+          </p>
+
+          <p class="text-black2 fw-bold ">
+            <i class="fa-solid fa-location-dot"></i> Flight to
+            <a href="javascript:void()" class="text-decoration-none text-white">London</a> , United kindom
+          </p>
+
+          <p class="text-black2 fw-bold ">
+            <i class="fa-solid fa-location-dot"></i> Flight to
+            <a href="javascript:void()" class="text-decoration-none text-white">New Yark</a> ,Thailand
+          </p>
+
+          <p class="text-black2 fw-bold ">
+            <i class="fa-solid fa-location-dot"></i> Flight to
+            <a href="javascript:void()" class="text-decoration-none text-white">London</a> ,Danmark
+          </p>
+
+          <p class="text-black2 fw-bold ">
+            <i class="fa-solid fa-location-dot"></i> Flight to
+            <a href="javascript:void()" class="text-decoration-none text-white">London</a> , United States
+          </p>
+
+          <p class="text-black2 fw-bold ">
+            <i class="fa-solid fa-location-dot"></i> Flight to
+            <a href="javascript:void()" class="text-decoration-none text-white">Paries</a> , France
+          </p>
+
+          <p class="text-black2 fw-bold ">
+            <i class="fa-solid fa-location-dot"></i> Flight to
+            <a href="javascript:void()" class="text-decoration-none text-white">Dubai</a> , United Arab Emirates
+          </p>
+
+          <p class="text-black2 fw-bold ">
+            <i class="fa-solid fa-location-dot"></i> Flight to
+            <a href="javascript:void()" class="text-decoration-none text-white">Singapore</a> , Singapore
+          </p>
+
+          <p class="text-black2 fw-bold ">
+            <i class="fa-solid fa-location-dot"></i> Flight to
+            <a href="javascript:void()" class="text-decoration-none text-white">London</a> , Turkey
+          </p>
+
+          <p class="text-black2 fw-bold ">
+            <i class="fa-solid fa-location-dot"></i> Flight to
+            <a href="javascript:void()" class="text-decoration-none text-white">Hong Kong</a> , Hong Kong
+          </p>
+
+        </div>
+        <div class="col-lg-5 col-md-12">
+          <h3 class="fw-bold text-black2 mb-4">International Cities</h3>
+          <div class="row ">
+            <div class="col-md-6">
+
+              <p class="text-black2 fw-bold ">
+                <img src="./assets/img/indiaflag.ico" style="width:20px; height:20px;">
+                India
+              </p>
+
+              <p class="text-black2 fw-bold ">
+                <img src="./assets/img/indiaflag.ico" style="width:20px; height:20px;">
+                Masco
+              </p>
+
+              <p class="text-black2 fw-bold ">
+                <img src="./assets/img/indiaflag.ico" style="width:20px; height:20px;">
+                Ingland
+              </p>
+
+              <p class="text-black2 fw-bold ">
+                <img src="./assets/img/indiaflag.ico" style="width:20px; height:20px;">
+                Chaina
+              </p>
+
+              <p class="text-black2 fw-bold ">
+                <img src="./assets/img/indiaflag.ico" style="width:20px; height:20px;">
+                America
+              </p>
+
+              <p class="text-black2 fw-bold ">
+                <img src="./assets/img/indiaflag.ico" style="width:20px; height:20px;">
+                newgiland
+              </p>
+
+              <p class="text-black2 fw-bold ">
+                <img src="./assets/img/indiaflag.ico" style="width:20px; height:20px;">
+                Bangladesh
+              </p>
+
+            </div>
+            <div class="col-md-6">
+
+              <p class="text-black2 fw-bold ">
+                <img src="./assets/img/indiaflag.ico" style="width:20px; height:20px;">
+                Spain
+              </p>
+
+              <p class="text-black2 fw-bold ">
+                <img src="./assets/img/indiaflag.ico" style="width:20px; height:20px;">
+                Nepal
+              </p>
+
+              <p class="text-black2 fw-bold ">
+                <img src="./assets/img/indiaflag.ico" style="width:20px; height:20px;">
+                France
+              </p>
+
+              <p class="text-black2 fw-bold ">
+                <img src="./assets/img/indiaflag.ico" style="width:20px; height:20px;">
+                Astraliya
+              </p>
+
+              <p class="text-black2 fw-bold ">
+                <img src="./assets/img/indiaflag.ico" style="width:20px; height:20px;">
+                Thailand
+              </p>
+
+              <p class="text-black2 fw-bold ">
+                <img src="./assets/img/indiaflag.ico" style="width:20px; height:20px;">
+                Germany
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- footer2 sesction start -->
+    <div class="container footer2 ">
+      <div class="row col-lg-12 ">
+        <div class="col-lg-1">
+
+        </div>
+        <div class=" col-lg-11">
+          <ul class="">
+            <li> <img src="./assets/img/icon.png" alt="icon image" class="img-fluid" style="width:50px;height: 50px;">
+            </li>
+            <li class="me-2">
+              <a href="javascript:void()">
+                <h6 class="fw-bold">About Us</h6>
+              </a>
+            </li>
+
+            <li class="me-2">
+              <a href="javascript:void()">
+                <h6 class="fw-bold">Jobs</h6>
+              </a>
+            </li>
+
+            <li class="me-2">
+              <a href="javascript:void()">
+                <h6 class="fw-bold">Press</h6>
+              </a>
+            </li>
+
+            <li class="me-2">
+              <a href="javascript:void()">
+                <h6 class="fw-bold">Affiliate</h6>
+              </a>
+            </li>
+
+            <li class="me-2">
+              <a href="javascript:void()">
+                <h6 class="fw-bold">Terms of Use</h6>
+              </a>
+            </li>
+
+            <li class="me-2">
+              <a href="javascript:void()">
+                <h6 class="fw-bold">Privancy Policy</h6>
+              </a>
+            </li>
+
+            <li class="me-2">
+              <a href="javascript:void()">
+                <h6 class="fw-bold">Cookies</h6>
+              </a>
+            </li>
+
+            <li class="me-2">
+              <a href="javascript:void()">
+                <h6 class="fw-bold">Airlines</h6>
+              </a>
+            </li>
+
+            <li class="me-2">
+              <a href="javascript:void()">
+                <h6 class="fw-bold">Apps</h6>
+              </a>
+            </li>
+
+            <li class="me-2">
+              <a href="javascript:void()">
+                <h6 class="fw-bold">Helps</h6>
+              </a>
+            </li>
+
+            <li class="ms-3">
+              <a href="javascript:void()">
+                <h6 class="fw-bold icon text-center rounded-circle">
+                  <i class="fa-brands fa-twitter mt-2" style=" width: 30px;height: 30px;"></i>
+                </h6>
+              </a>
+            </li>
+
+            <li class="ms-3">
+              <a href="javascript:void()">
+                <h6 class="fw-bold icon text-center rounded-circle">
+                  <i class="fa-brands fa-facebook-f mt-2" style=" width: 30px;height: 30px;"></i>
+                </h6>
+              </a>
+            </li>
+
+            <li class="ms-3">
+              <a href="javascript:void()">
+                <h6 class="fw-bold icon text-center rounded-circle">
+                  <i class="fa-brands fa-google-plus-g mt-2" style=" width: 30px;height: 30px;"></i>
+                </h6>
+              </a>
+            </li>
+
+          </ul>
+          <div>
+            <p class="text-white">Lorem ipsum dolor sit, 
+              Maxime tenetur impedit reiciendis rerum nostrum optio quisquam iste neque?
+
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+    <!-- footer2 sesction end -->
+  </footer>
+  <!-- Our footer section end -->
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
