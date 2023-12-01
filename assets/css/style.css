@@ -30,7 +30,7 @@ font-family: 'Poppins', sans-serif;
     height: 580px;
     background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
     url(../img/banner.jpeg);
-    background-size: 100% 100%;
+    background-size:cover;
 }
 .top-20{
    top:20%;
@@ -69,7 +69,8 @@ font-family: 'Poppins', sans-serif;
     height:40px;
 }
 .fun .funp{
-    font-size: 14px;
+    font-size: 10px;
+    font-weight: 900;
 }
 /* Our fun section end */
 
@@ -86,8 +87,9 @@ font-family: 'Poppins', sans-serif;
 
 /* Our Estimate section start */
 .Estimate img{
-    margin-right: 0px;
-    bottom: 0px;
+ margin-left: 590%;
+
+   
 }
 /* Our Estimate section end */
 
@@ -133,8 +135,8 @@ footer .footer2 ul li a{
     color: #fff;
 }
 footer .footer2 p{
-    margin-top: -30px;
-    padding-left: 52px;
+    margin-top: -40px;
+    padding-left: 58px;
 }
 ol, ul {
      padding-left:0px;
@@ -202,6 +204,7 @@ footer .footer2 ul li a .icon{
     .top-20{
         top:10%;
     }
+   
 }
 
 @media screen and (max-width:329px) {
