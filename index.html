@@ -51,12 +51,12 @@
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle text-light" href="javascript:void()" role="button"
                   data-bs-toggle="dropdown" aria-expanded="false">
-                  <img src="./assets/img/flage .jpeg"style="width: 20px;height: 20px;">
+                  <img src="./assets/img/flage .jpeg" style="width: 20px;height: 20px;">
                   English(GBP)
                 </a>
                 <ul class="dropdown-menu">
                   <li>
-                    
+
                     <a class="dropdown-item" href="javascript:void()">English</a>
                   </li>
 
@@ -98,7 +98,7 @@
         </div>
       </div>
       <div class="row ">
-        <div class=" col-11 col-md-10 col-sm-9 position-absolute bottom-0 ms-2 mb-1 bg-info2 rounded py-2 px-2 px-sm-3">
+        <div class=" col-11 col-md-11 col-sm-9 position-absolute bottom-0 mb-1 bg-info2 rounded py-1 px-1 px-sm-3">
           <nav class="mb-2">
             <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
               <button class="nav-link active rounded-0 border-0 text-white bg-info3  btn-width-85" id="nav-home-tab"
@@ -132,124 +132,164 @@
             <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
               tabindex="0">
               <form action="">
-                <div class="row g-1">
-                  <div class="col-sm-6 col-lg-2">
-                    <input type="text" class="form-control" placeholder="Enter origin city" aria-label="Origin">
+                <div class=" row g-1">
+
+                  <div class="col-sm-6 col-md-2" style="display:flex;">
+                    <input type="text" class="form-control" placeholder="Enter origin city" style="font-size: 11px; font-weight:bold;">
+                    &nbsp;<span><i class="fa-solid fa-arrow-right-arrow-left text-white mt-2"></i></span>
                   </div>
-                  <div class="col-sm-6 col-lg-2 d-flex"><i
-                      class=" mt-2 text-blue4 mx-1 fa-solid fa-arrow-right-arrow-left"></i>
-                    <input type="text" class="form-control" placeholder="Destination city" aria-label="Destination">
+
+                  <div class="col-sm-6 col-md-2" style="display:flex;">
+                    <input type="text" class="form-control" placeholder="Enter destination city"
+                      style="font-size: 11px; font-weight: bold;">
                   </div>
-                  <div class="col-sm-6 col-lg-2">
-                    <input type="date" class="form-control" placeholder="Last name" aria-label="Sdate">
+
+                  <div class="col-sm-6 col-md-2" style="display:flex;">
+                    <input type="date" class="form-control" placeholder="Enter origin city" style="font-size: 11px; font-weight: bold;">
                   </div>
-                  <div class="col-sm-6 col-lg-2">
-                    <input type="date" class="form-control" placeholder="Last name" aria-label="Edate">
+
+                  <div class="col-sm-6 col-md-2" style="display:flex;">
+                    <input type="date" class="form-control" placeholder="Enter origin city" style="font-size: 11px; font-weight: bold;">
                   </div>
-                  <div class="col-sm-6 col-lg-2">
-                    <input type="text" class="form-control" placeholder="Passenger" aria-label="Passenger">
+                  <div class="col-sm-6 col-md-2">
+                    <select class="form-select"aria-label="Default select example"
+                    style="font-size: 11px; font-weight: bold;">
+                    <option>1 passenger</option>
+                    <option>2 passenger</option>
+                    <option>3 passenger</option>
+                    <option>More</option>
+                    </select>
                   </div>
-                  <div class="col-sm-6 col-lg-2 ">
+                  <div class="col-sm-6 col-md-2 ">
                     <input type="submit" class="form-control bg-dnager3 mb-2 rounded-sm-circle circle "
                       placeholder="Search" aria-label="Passenger">
                   </div>
-
                 </div>
-
-
-                <form action="">
-                  <div class="row formfunction col-sm-5 col-lg-9  ">
-                    <div class="col-sm-6 col-lg-10 d-flex">
-                      <h6 class="text-white mt-2 ">Trip type:</h6>
-                      <select class="form-select bg-info2 text-white border-0 " aria-label="Default select example">
-                        <option selected>Return trip</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-
-                      <!-- <div class="colsm-6 col-lg3 d-flex"> -->
-                      <h6 class="text-white mt-2 ">Trip type:</h6>
-                      <select class="form-select bg-info2 text-white border-0 " aria-label="Default select example">
-                        <option selected>Return trip</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-
-                      <!-- <div class="colsm-6 col-lg3 d-flex"> -->
-                      <div>
-                        <input type="checkbox" name="checkt" class="checkbox text-white mt-2 me-1" value="trip"><span
-                          class="text-white fs10 me-2 ">Direct flight only</span>
-                        <input type="checkbox" name="checkt" class="checkbox text-white mt-2 me-1" value="trip"><span
-                          class="text-white fs10 ">Include near airport</span>
-                        <!-- <h6 class="text-white mt-2 ">Direct flight only</h6> -->
+                <div class="row g-1">
+                  <div class="col">
+                    <div class="finalrow py-2" style="display: flex; color: #fff; padding: 2px;">
+                      <div class="span fs13">
+                        <span>
+                          <i class="fa-solid fa-arrows-rotate"></i>
+                        </span>&nbsp;
+                        <span>Trip type:</span>
+                        <select class="text-info1 fs13 " style="background: transparent;
+                        border: 0px; padding-right: 10px;">
+                         <option>One way trip</option>
+                         <option>Return trip</option>
+                        </select>
                       </div>
+
+                      <div class="span fs13">
+                        <span>
+                          <i class="fa-solid fa-ticket"></i>
+                        </span>&nbsp;
+                        <span>Ticket class:</span>
+                        <select class="text-info1 fs13 " style="background: transparent;
+                        border: 0px; padding-right: 10px;">
+                         <option>Economy</option>
+                         <option>First </option>
+                         <option>Bussiness</option>
+                        </select>
+                      </div>
+
+                      <span class="span fs13"id="span" >
+                        Direct Flight only
+                        <input type="checkbox"name="direct filght only" id="span">
+                      </span>
+
+                      <span class="span fs13 ms-2"id="airport" >
+                        Include Near Airport
+                        <input type="checkbox"name="include near airport" id="airport">
+                      </span>
+
                     </div>
+
                   </div>
-                </form>
+                </div>
               </form>
             </div>
             <!-- hotel start -->
             <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
 
               <form action="">
-                <div class="row g-1">
-                  <div class="col-sm-6 col-lg-2">
-                    <input type="text" class="form-control" placeholder="Enter origin city" aria-label="Origin">
+                <div class=" row g-1">
+
+                  <div class="col-sm-6 col-md-2" style="display:flex;">
+                    <input type="text" class="form-control" placeholder="Enter origin city" style="font-size: 11px; font-weight:bold;">
+                     &nbsp;<span><i class="fa-solid fa-arrow-right-arrow-left text-white mt-2"></i></span>
                   </div>
-                  <div class="col-sm-6 col-lg-2 d-flex"><i
-                      class=" mt-2 text-blue4 mx-1 fa-solid fa-arrow-right-arrow-left"></i>
-                    <input type="text" class="form-control" placeholder="Destination city" aria-label="Destination">
+
+                  <div class="col-sm-6 col-md-2" style="display:flex;">
+                    <input type="text" class="form-control" placeholder="Enter destination city"
+                      style="font-size: 11px; font-weight: bold;">
                   </div>
-                  <div class="col-sm-6 col-lg-2">
-                    <input type="date" class="form-control" placeholder="Last name" aria-label="Sdate">
+
+                  <div class="col-sm-6 col-md-2" style="display:flex;">
+                    <input type="date" class="form-control" placeholder="Enter origin city" style="font-size: 11px; font-weight: bold;">
                   </div>
-                  <div class="col-sm-6 col-lg-2">
-                    <input type="date" class="form-control" placeholder="Last name" aria-label="Edate">
+
+                  <div class="col-sm-6 col-md-2" style="display:flex;">
+                    <input type="date" class="form-control" placeholder="Enter origin city" style="font-size: 11px; font-weight: bold;">
                   </div>
-                  <div class="col-sm-6 col-lg-2">
-                    <input type="text" class="form-control" placeholder="Passenger" aria-label="Passenger">
+                  <div class="col-sm-6 col-md-2">
+                    <select class="form-select"aria-label="Default select example"
+                    style="font-size: 11px; font-weight: bold;">
+                    <option>1 passenger</option>
+                    <option>2 passenger</option>
+                    <option>3 passenger</option>
+                    <option>More</option>
+                    </select>
                   </div>
-                  <div class="col-sm-6 col-lg-2 ">
+                  <div class="col-sm-6 col-md-2 ">
                     <input type="submit" class="form-control bg-dnager3 mb-2 rounded-sm-circle circle "
                       placeholder="Search" aria-label="Passenger">
                   </div>
-
                 </div>
+                <div class="row g-1">
+                  <div class="col">
+                    <div class="finalrow py-2" style="display: flex; color: #fff; padding: 2px;">
+                      <div class="span fs13">
+                        <span>
+                          <i class="fa-solid fa-arrows-rotate"></i>
+                        </span>&nbsp;
 
-
-                <form action="">
-                  <div class="row formfunction col-sm-7 col-lg-9 ">
-                    <div class="col-sm-6 col-lg-10 d-flex">
-                      <h6 class="text-white mt-2 ">Trip type:</h6>
-                      <select class="form-select bg-info2 text-white border-0 " aria-label="Default select example">
-                        <option selected>Return trip</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-
-                      <!-- <div class="colsm-6 col-lg3 d-flex"> -->
-                      <h6 class="text-white mt-2 ">Trip type:</h6>
-                      <select class="form-select bg-info2 text-white border-0 " aria-label="Default select example">
-                        <option selected>Return trip</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-
-                      <!-- <div class="colsm-6 col-lg3 d-flex"> -->
-                      <div>
-                        <input type="checkbox" name="checkt" class="checkbox text-white mt-2 me-1" value="trip"><span
-                          class="text-white fs10 me-2 ">Direct flight only</span>
-                        <input type="checkbox" name="checkt" class="checkbox text-white mt-2 me-1" value="trip"><span
-                          class="text-white fs10 ">Include near airport</span>
-                        <!-- <h6 class="text-white mt-2 ">Direct flight only</h6> -->
+                        <span>Trip type:</span>
+                        <select class="text-info1 fs13 " style="background: transparent;
+                        border: 0px; padding-right: 10px;">
+                         <option>One way trip</option>
+                         <option>Return trip</option>
+                        </select>
                       </div>
+
+                      <div class="span fs13">
+                        <span>
+                          <i class="fa-solid fa-ticket"></i>
+                        </span>&nbsp;
+
+                        <span>Ticket class:</span>
+                        <select class="text-info1 fs13 " style="background: transparent;
+                        border: 0px; padding-right: 10px;">
+                         <option>Economy</option>
+                         <option>First </option>
+                         <option>Bussiness</option>
+                        </select>
+                      </div>
+
+                      <span class="span fs13"id="span" >
+                        Direct Flight only
+                        <input type="checkbox"name="direct filght only" id="span">
+                      </span>
+
+                      <span class="span fs13 ms-2"id="airport" >
+                        Include Near Airport
+                        <input type="checkbox"name="include near airport" id="airport">
+                      </span>
+
                     </div>
+
                   </div>
-                </form>
+                </div>
               </form>
 
 
@@ -260,62 +300,83 @@
             <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
 
               <form action="">
-                <div class="row g-1">
-                  <div class="col-sm-6 col-lg-2">
-                    <input type="text" class="form-control" placeholder="Enter origin city" aria-label="Origin">
+                <div class=" row g-1">
+
+                  <div class="col-sm-6 col-md-2" style="display:flex;">
+                    <input type="text" class="form-control" placeholder="Enter origin city" style="font-size: 11px; font-weight:bold;">
+                     &nbsp;<span><i class="fa-solid fa-arrow-right-arrow-left text-white mt-2"></i></span>
                   </div>
-                  <div class="col-sm-6 col-lg-2 d-flex"><i
-                      class=" mt-2 text-blue4 mx-1 fa-solid fa-arrow-right-arrow-left"></i>
-                    <input type="text" class="form-control" placeholder="Destination city" aria-label="Destination">
+
+                  <div class="col-sm-6 col-md-2" style="display:flex;">
+                    <input type="text" class="form-control" placeholder="Enter destination city"
+                      style="font-size: 11px; font-weight: bold;">
                   </div>
-                  <div class="col-sm-6 col-lg-2">
-                    <input type="date" class="form-control" placeholder="Last name" aria-label="Sdate">
+
+                  <div class="col-sm-6 col-md-2" style="display:flex;">
+                    <input type="date" class="form-control" placeholder="Enter origin city" style="font-size: 11px; font-weight: bold;">
                   </div>
-                  <div class="col-sm-6 col-lg-2">
-                    <input type="date" class="form-control" placeholder="Last name" aria-label="Edate">
+
+                  <div class="col-sm-6 col-md-2" style="display:flex;">
+                    <input type="date" class="form-control" placeholder="Enter origin city" style="font-size: 11px; font-weight: bold;">
                   </div>
-                  <div class="col-sm-6 col-lg-2">
-                    <input type="text" class="form-control" placeholder="Passenger" aria-label="Passenger">
+                  <div class="col-sm-6 col-md-2">
+                    <select class="form-select"aria-label="Default select example"
+                    style="font-size: 11px; font-weight: bold;">
+                    <option>1 passenger</option>
+                    <option>2 passenger</option>
+                    <option>3 passenger</option>
+                    <option>More</option>
+                    </select>
                   </div>
-                  <div class="col-sm-6 col-lg-2 ">
+                  <div class="col-sm-6 col-md-2 ">
                     <input type="submit" class="form-control bg-dnager3 mb-2 rounded-sm-circle circle "
                       placeholder="Search" aria-label="Passenger">
                   </div>
-
                 </div>
+                <div class="row g-1">
+                  <div class="col">
+                    <div class="finalrow py-2" style="display: flex; color: #fff; padding: 2px;">
+                      <div class="span fs13">
+                        <span>
+                          <i class="fa-solid fa-arrows-rotate"></i>
+                        </span>&nbsp;
 
-
-                <form action="">
-                  <div class="row formfunction col-sm-7 col-lg-9  ">
-                    <div class="col-sm-6 col-lg-10 d-flex">
-                      <h6 class="text-white mt-2 ">Trip type:</h6>
-                      <select class="form-select bg-info2 text-white border-0 " aria-label="Default select example">
-                        <option selected>Return trip</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-
-                      <!-- <div class="colsm-6 col-lg3 d-flex"> -->
-                      <h6 class="text-white mt-2 ">Trip type:</h6>
-                      <select class="form-select bg-info2 text-white border-0 " aria-label="Default select example">
-                        <option selected>Return trip</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-
-                      <!-- <div class="colsm-6 col-lg3 d-flex"> -->
-                      <div>
-                        <input type="checkbox" name="checkt" class="checkbox text-white mt-2 me-1" value="trip"><span
-                          class="text-white fs10 me-2 ">Direct flight only</span>
-                        <input type="checkbox" name="checkt" class="checkbox text-white mt-2 me-1" value="trip"><span
-                          class="text-white fs10 ">Include near airport</span>
-                        <!-- <h6 class="text-white mt-2 ">Direct flight only</h6> -->
+                        <span>Trip type:</span>
+                        <select class="text-info1 fs13 " style="background: transparent;
+                        border: 0px; padding-right: 10px;">
+                         <option>One way trip</option>
+                         <option>Return trip</option>
+                        </select>
                       </div>
+
+                      <div class="span fs13">
+                        <span>
+                          <i class="fa-solid fa-ticket"></i>
+                        </span>&nbsp;
+
+                        <span>Ticket class:</span>
+                        <select class="text-info1 fs13 " style="background: transparent;
+                        border: 0px; padding-right: 10px;">
+                         <option>Economy</option>
+                         <option>First </option>
+                         <option>Bussiness</option>
+                        </select>
+                      </div>
+
+                      <span class="span fs13"id="span" >
+                        Direct Flight only
+                        <input type="checkbox"name="direct filght only" id="span">
+                      </span>
+
+                      <span class="span fs13 ms-2"id="airport" >
+                        Include Near Airport
+                        <input type="checkbox"name="include near airport" id="airport">
+                      </span>
+
                     </div>
+
                   </div>
-                </form>
+                </div>
               </form>
 
             </div>
@@ -548,9 +609,9 @@
 
   <!-- Estimate section start -->
   <div class="Estimate py-5 bg-info2 position-relative">
-    <div class="row position-absolute bottom-0">
+    <!-- <div class="row position-absolute bottom-0">
       <img src="./assets/img/estimate23.png" class=" img-fluid estmate">
-    </div>
+    </div> -->
     <div class="conatiner">
       <div class="row px-5">
         <h3 class=" fw-bold text-white">GET A QUICK ESTIMATE!</h3>
@@ -641,7 +702,7 @@
 
   <!-- Our footer section start -->
   <footer class="bg-dark2 bg-opacity-75 py-5">
-    <div class="container p-5">
+    <div class="container p-3">
       <div class="row">
         <div class="col-lg-3 col-md-6">
           <h3 class="fw-bold text-black2 mb-4">Top Contries</h3>
@@ -842,61 +903,61 @@
             </li>
             <li class="me-2">
               <a href="javascript:void()">
-                <h6 class="fw-bold">About Us</h6>
+                <h6 class="">About Us</h6>
               </a>
             </li>
 
             <li class="me-2">
               <a href="javascript:void()">
-                <h6 class="fw-bold">Jobs</h6>
+                <h6 class="">Jobs</h6>
               </a>
             </li>
 
             <li class="me-2">
               <a href="javascript:void()">
-                <h6 class="fw-bold">Press</h6>
+                <h6 class="">Press</h6>
               </a>
             </li>
 
             <li class="me-2">
               <a href="javascript:void()">
-                <h6 class="fw-bold">Affiliate</h6>
+                <h6 class="">Affiliate</h6>
               </a>
             </li>
 
             <li class="me-2">
               <a href="javascript:void()">
-                <h6 class="fw-bold">Terms of Use</h6>
+                <h6 class="">Terms of Use</h6>
               </a>
             </li>
 
             <li class="me-2">
               <a href="javascript:void()">
-                <h6 class="fw-bold">Privancy Policy</h6>
+                <h6 class="">Privancy Policy</h6>
               </a>
             </li>
 
             <li class="me-2">
               <a href="javascript:void()">
-                <h6 class="fw-bold">Cookies</h6>
+                <h6 class="">Cookies</h6>
               </a>
             </li>
 
             <li class="me-2">
               <a href="javascript:void()">
-                <h6 class="fw-bold">Airlines</h6>
+                <h6 class="">Airlines</h6>
               </a>
             </li>
 
             <li class="me-2">
               <a href="javascript:void()">
-                <h6 class="fw-bold">Apps</h6>
+                <h6 class="">Apps</h6>
               </a>
             </li>
 
             <li class="me-2">
               <a href="javascript:void()">
-                <h6 class="fw-bold">Helps</h6>
+                <h6 class="">Helps</h6>
               </a>
             </li>
 
@@ -926,9 +987,8 @@
 
           </ul>
           <div>
-            <p class="text-white">Lorem ipsum dolor sit, 
+            <p class="text-white">Lorem ipsum dolor sit,
               Maxime tenetur impedit reiciendis rerum nostrum optio quisquam iste neque?
-
             </p>
           </div>
 

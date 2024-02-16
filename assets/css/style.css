@@ -11,6 +11,12 @@ box-sizing: border-box;
 font-family: 'Poppins', sans-serif;
 /* font-family:ajeet, Cochin, Georgia, Times, 'Times New Roman', serif; */
 }
+/* our font-size section start */
+.fs10{font-size: 10px;}
+.fs11{font-size: 11px;}
+.fs12{font-size: 12px;}
+.fs13{font-size: 13px;}
+/* our font-size section end */
 
 /* Our color section start */
 .bg-blue2{ background-color: #0e1937;}
@@ -18,6 +24,8 @@ font-family: 'Poppins', sans-serif;
 .bg-info2{background-color: #5B327A;}
 .bg-info3{background-color: #3a1457;}
 .bg-dnager3{background-color: #a42e46;}
+
+.text-info1{color: #ce9bf5;}
 .text-blue4{color: #87CEC6;}
 .text-success2{color: #406620;}
 .text-danger2{color: #a42e46!important;}
@@ -27,11 +35,11 @@ font-family: 'Poppins', sans-serif;
 
 /* Our banner section start */
 .banner{width: 100%;
-    height: 580px;
-    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
-    url(../img/banner.jpeg);
-    background-size:cover;
-}
+        height: 580px;
+        background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+        url(../img/banner.jpeg);
+        background-size:cover;
+    }
 .top-20{
    top:20%;
 }
@@ -39,27 +47,34 @@ font-family: 'Poppins', sans-serif;
     background-color: #a42e46;
 }
 
-.banner .formfunction  select,checkbox{
-    width: 117px;
-    height: 30px;
+ input, optgroup, select, textarea{
+    /* width: 150px;
+    height: 30px; */
     border: none;
-    color:#fff;
+    margin-left: 2px;
     font-size: 12px;
-} 
+    border-radius: 6px;
+}
+.banner table td{
+    font-size: 12px;
+}
+.banner table td select{
+    border: none;
+    background: none;
+    background-color:#5B327A;
+
+}
 .banner  h6{
-    font-size: 12px;
+    font-size: 13px;
 }
 .fs10{
     font-size: 12px;
 }
-/* .banner  .form-check-label{
-    font-size: 12px;
-} */
+
 /* Our banner section end */
 
 /* Our fun section start */
 .fun{
-    
    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/fun4.avif);
   background-size:100% 100%;
    background-repeat: no-repeat;
@@ -86,11 +101,11 @@ font-family: 'Poppins', sans-serif;
 
 
 /* Our Estimate section start */
-.Estimate img{
- margin-left: 590%;
+/* .Estimate img{
+ margin-left: 100%;
 
    
-}
+} */
 /* Our Estimate section end */
 
 /* Blog section start */
@@ -135,16 +150,15 @@ footer .footer2 ul li a{
     color: #fff;
 }
 footer .footer2 p{
-    margin-top: -40px;
+    margin-top: -20px;
     padding-left: 58px;
 }
 ol, ul {
      padding-left:0px;
 }
 footer .footer2 ul li a .icon{
-    width: 50px;
-    height: 50px;
-    
+    width: 40px;
+    height: 40px; 
     color: #56535A;
     background-color: #fff;
 
